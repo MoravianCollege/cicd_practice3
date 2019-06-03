@@ -13,3 +13,7 @@ def test_config_reads_delay_():
 def test_config_loads_secret():
     config = Config()
     assert config.get_secret() == 42
+
+
+def test_config_sample():
+	assert 10 == 10
