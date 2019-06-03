@@ -15,8 +15,8 @@ class Config:
         self.config = ConfigParser()
         self.config.read(filename)
 
-        load_dotenv()
-        self.secret = int(getenv('secret'))
+        """load_dotenv()
+        self.secret = int(getenv('secret'))"""
 
     def get_delay(self):
         return int(self.config['DEFAULT']['delay'])
