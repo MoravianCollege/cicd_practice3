@@ -1,0 +1,9 @@
+README.md
+setup.py
+src/python_structure/__init__.py
+src/python_structure/config.py
+src/python_structure/main.py
+src/python_structure.egg-info/PKG-INFO
+src/python_structure.egg-info/SOURCES.txt
+src/python_structure.egg-info/dependency_links.txt
+src/python_structure.egg-info/top_level.txt
