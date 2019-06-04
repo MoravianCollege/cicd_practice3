@@ -5,5 +5,5 @@ def test_get_page():
     app.config['TESTING'] = True
     client = app.test_client()
 
-    result = client.get('/practice')
+    result = client.get('/')
     assert b'Hello world!' in result.data
