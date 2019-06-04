@@ -1,4 +1,4 @@
-from practice.app import app
+from Practice.app import app
 
 
 def test_get_page():
