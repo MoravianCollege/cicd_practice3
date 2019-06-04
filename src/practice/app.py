@@ -1,6 +1,6 @@
-from flask import Flask, request
+from flask import abort, Flask, request
 app = Flask(__name__)
 
-@app.route("/practice")
-def practice():
-    return "Hello world!"
+@app.route('/')
+def hello():
+	return "Hello world!"
