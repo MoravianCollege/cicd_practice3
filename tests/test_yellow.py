@@ -1,4 +1,4 @@
-from python_structure.yellow import foo
+from Practice.yellow import foo
 
 
 def test_foo():
