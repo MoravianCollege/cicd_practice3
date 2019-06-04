@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="python_structure",
+    name="Practice",
     packages=find_packages('src'),
     package_dir={'': 'src'}
 )
