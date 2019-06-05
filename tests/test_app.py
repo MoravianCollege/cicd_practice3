@@ -1,4 +1,4 @@
-from Practice.app import app
+from practice.app import app
 
 
 def test_get_hello():

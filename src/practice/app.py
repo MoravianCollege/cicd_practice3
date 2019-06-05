@@ -1,6 +1,8 @@
-from flask import abort, Flask, request
+from flask import Flask
+from practice.main import hello
 app = Flask(__name__)
 
-@app.route('/')
-def hello():
-	return "Hello world!"
+
+@app.route('/hello')
+def get_hello():
+    return str(hello())

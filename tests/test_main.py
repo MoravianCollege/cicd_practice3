@@ -1,4 +1,4 @@
-from Practice import main
+from practice import main
 
 
 def test_hello():
