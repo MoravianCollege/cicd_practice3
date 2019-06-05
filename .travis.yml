@@ -7,11 +7,11 @@ install:
 script: pytest
 addons:
   ssh_known_hosts:
-  - 18.219.192.252
-before_deploy:
-- openssl aes-256-cbc -K $encrypted_49099c38b3b5_key -iv $encrypted_49099c38b3b5_iv -in deploy_rsa.enc -out deploy_rsa -d
-- chmod 600 deploy_rsa
+  - 13.58.241.38
 deploy:
   provider: script
   skip_cleanup: true
-  script: ssh -i deploy_rsa ubuntu@18.219.192.252 'source /home/ubuntu/CICD_Practice/deploy.sh'
+  script: ssh -i deploy_rsa ubuntu@13.58.241.38 'source /home/ubuntu/cicd_practice3/scripts/deploy.sh'
+before_deploy:
+- openssl aes-256-cbc -K $encrypted_d4fe774d01e8_key -iv $encrypted_d4fe774d01e8_iv
+  -in deploy_rsa.enc -out deploy_rsa -d
