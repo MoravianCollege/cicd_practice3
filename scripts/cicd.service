@@ -1,0 +1,10 @@
+[Unit]
+Description=Start Mirrulations on Boot
+After=multi-user.target
+
+[Service]
+Type=idle
+ExecStart=/usr/local/bin/gunicorn -b 0.0.0.0:80 --chdir /home/ubuntu/cicd_practice3/src/practice/ app:app
+
+[Install]
+WantedBy=multi-user.target
